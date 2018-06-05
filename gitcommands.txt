@@ -1,0 +1,92 @@
+#>>> Configure the git local directory to a repo:
+====================================================
+#git config --global user.name "nihadjifri"
+#git config --global user.email "nihadjifri@gmail.com" 
+
+#>>> clone a repo to our local machine:
+=========================================
+#git clone path_to_repo -> git clone https://github/nihadjifri/Linux-device-drivers.git
+
+# "Always recommented to create a readme file telling the aim of that project or the purpose of that repo"
+
+#>>> git status <<< will give the current status of git
+#>>> git log    <<< will show the current logfile contents
+
+#>>> To ADD a file for staging / making ready to upload the file:
+
+=================================================================
+
+#git add filename -> git add README.md
+
+
+
+#>>> To document the updation successfully for a better recollection of previous version before uploading the file:
+
+===================================================================================================================
+
+#git commit -m "add any comment explain the changes made to that file"
+
+
+
+#>>> To update the origin from one repo to the other / to switch from one repe to the other:
+
+===========================================================================================
+
+#git remote add origin path_to_repo -> git remote add origin https://github/nihadjifri/ldd.git
+
+
+
+#>>> To upload / push a file to Github
+
+========================================
+
+#git push -u origin master
+
+
+
+#>>> To download / pull a file from github (can be an updated version by some other contributer)
+
+================================================================================================
+
+#git pull filename -> pull / download a specific file
+
+#git pull origin master -> pull / download the content of the whole current directory[repository/repo/project]
+
+
+
+#>>> To remove a file:
+
+=======================
+
+#git rm file1.txt
+
+#git commit -m "remove file1.txt"
+
+#But if you want to remove the file only from the Git repository and not remove it from the filesystem, use:
+
+
+#git rm --cached file1.txt
+
+#git commit -m "remove file1.txt"
+
+#And to push changes to remote repo
+
+
+#git push origin branch_name
+
+
+
+
+## Need to work with :
+
+========================
+
+#git init
+#git checkout -- .   -> to recover files to a previous version
+#git checkout -b filename
+
+
+
+## Confict resolution ##
+
+========================
