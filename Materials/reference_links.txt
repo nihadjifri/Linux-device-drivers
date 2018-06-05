@@ -2,6 +2,12 @@
 ====================
 #https://opensourceforu.com/tag/linux-device-drivers-series/
 
+
 #Embetronicx Website
 ====================
 https://embetronicx.com/tag/device-driver/
+
+
+#Third Edition of Linux Device Drivers, by Jonathan Corbet, Alessandro Rubini, and Greg Kroah-Hartman
+====================================================================================================
+https://lwn.net/Kernel/LDD3/
