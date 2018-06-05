@@ -13,12 +13,8 @@
 #>>> git log    <<< will show the current logfile contents
 
 #>>> To ADD a file for staging / making ready to upload the file:
-
 =================================================================
-
 #git add filename -> git add README.md
-
-
 
 #>>> To document the updation successfully for a better recollection of previous version before uploading the file:
 
@@ -26,32 +22,22 @@
 
 #git commit -m "add any comment explain the changes made to that file"
 
-
-
 #>>> To update the origin from one repo to the other / to switch from one repe to the other:
 
 ===========================================================================================
 
 #git remote add origin path_to_repo -> git remote add origin https://github/nihadjifri/ldd.git
 
-
-
 #>>> To upload / push a file to Github
-
 ========================================
 
 #git push -u origin master
 
-
-
 #>>> To download / pull a file from github (can be an updated version by some other contributer)
-
 ================================================================================================
-
 #git pull filename -> pull / download a specific file
 
 #git pull origin master -> pull / download the content of the whole current directory[repository/repo/project]
-
 
 
 #>>> To remove a file:
@@ -63,30 +49,20 @@
 #git commit -m "remove file1.txt"
 
 #But if you want to remove the file only from the Git repository and not remove it from the filesystem, use:
-
-
 #git rm --cached file1.txt
 
 #git commit -m "remove file1.txt"
 
 #And to push changes to remote repo
 
-
 #git push origin branch_name
 
-
-
-
 ## Need to work with :
-
 ========================
 
 #git init
 #git checkout -- .   -> to recover files to a previous version
 #git checkout -b filename
 
-
-
 ## Confict resolution ##
-
 ========================
