@@ -8,11 +8,12 @@ Skills Required:
  on linux kernel. you dont want to be extremely good in those.
 
 Hardware Requirements:
-	You need a machine [PC,laptop, raspberry pi, Beagle board]
+You need a machine [PC,laptop, raspberry pi, Beagle board]
 of any manufacturer of any version which can run any distribution 
 of linux on it. I recomment you to work with out any virtual machines 
 like vmware or virtual box, its better to work on pure hardware with 
 single linux distribution or a dual booted machine.
+
 Here i would like to give you all the required information as
 n number of capsules each containg the most importand concepts
 and steps to be followed while we deal with it. So for each modules,
@@ -23,6 +24,7 @@ have any doubt comment it below, i'll reach you back as soon as
 possible. If you wanna get more information on that go to the material
 folder and find the pdf books and links read those it will turn you out
 to an advanced level kernel hacker.
+
 Now its always a good practice to know about the working of github,
 how to play around with it. without any doubt its a killer in project
 management where if you are a team and if you want to collaborate multiple
