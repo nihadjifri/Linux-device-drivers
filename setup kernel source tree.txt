@@ -1,0 +1,60 @@
+https://github.com/notro/rpi-source/wiki
+http://freesoftwaremagazine.com/articles/drivers_linux/
+https://raspberrypi.stackexchange.com/questions/5230/getting-no-rule-to-make-target-modules-stop-error-when-running-makefile-w
+https://github.com/notro/rpi-source/wiki/Examples-on-how-to-build-various-modules
+
+make sure both the "driver.c" file and "Makefile" is available in the current directory:
+
+check current kernel version:
+
+>>  uname -r
+>>  4.9.80-v7+
+
+check softlink built is available at : /lib/modules/`uname -r`/build 
+
+Then only we can "make" our module(LKM) successfully
+
+Check kernel header files available in :
+/usr/src/`uname -r`
+
+If not :
+add the kernel header files to compile your kernel module
+sudo apt-get install raspberrypi-kernel-headers
+
+https://www.raspberrypi.org/documentation/linux/kernel/headers.md
+
+
+extra commands tried :
+////////////////////////////////////////////////////////////////
+https://superuser.com/questions/600010/raspberry-pi-apt-get-upgrade-failed
+
+First remove local apt cache by doing "apt-get clean", and then try your "apt-get install" again.
+
+Note however, if your archives got corrupted in the first place, your SDcard might be low quality or broken (or fake),
+so you might want to check that too if problems persists (running fsck, checking SDcard with F3 or similar)
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+others:
+Kernel building 
+https://www.raspberrypi.org/documentation/linux/kernel/building.md
+
+The Beginner’s Guide to Linux Kernel Module, Raspberry Pi and LED Matrix:
+https://blog.fazibear.me/the-beginners-guide-to-linux-kernel-module-raspberry-pi-and-led-matrix-790e8236e8e9
+
+dpkg error during upgrading:
+Remove Old Kernels In Ubuntu With One Command:
+http://tuxtweaks.com/2010/10/remove-old-kernels-in-ubuntu-with-one-command/
+
+How do I free up more space in /boot?:
+https://askubuntu.com/questions/89710/how-do-i-free-up-more-space-in-boot
+
+////////////////////////////////////////////////////////////////
+>>> “gzip: stdout: No space left on device” while upgrading the kernel [duplicate]
+https://askubuntu.com/questions/223248/gzip-stdout-no-space-left-on-device-while-upgrading-the-kernel
+////////////////////////////////////////////////////////////////
+
+
+linux for embedded system ::
+https://www.yoctoproject.org/is-yocto-project-for-you/
+u-boot bootloader:
+http://www.informit.com/articles/article.aspx?p=1647051&seqNum=5
